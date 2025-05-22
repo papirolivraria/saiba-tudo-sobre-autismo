@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autismo: Uma visão geral sobre o transtorno do espectro autista | Hotmart</title>
+    <style>
+        :root {
+            --primary-color: #2980b9;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-text: #fff;
+            --background-light: #f9f9f9;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-light);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--light-text);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--light-text);
+            padding: 15px 30px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+        
+        .book-preview {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        
+        .book-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .book-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .book-description {
+            flex: 1;
+            min-width: 300px;
+            padding: 0 20px;
+        }
+        
+        .benefits {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .benefit-item {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        
+        .benefit-icon {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .chapters {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .chapter-card {
+            background-color: #fff;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .chapter-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .chapter-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .testimonials {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            position: relative;
+        }
+        
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+        }
+        
+        .faq-item {
+            background-color: #fff;
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .faq-answer {
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .guarantee {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-top: 40px;
+        }
+        
+        .guarantee-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .pricing {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .price {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin: 20px 0;
+        }
+        
+        .price-note {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .book-preview {
+                flex-direction: column;
+            }
+            
+            .book-description {
+                padding: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p>GUIA COMPLETO E ACESSÍVEL</p>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>AUTISMO</h1>
+            <p>Uma visão geral sobre o transtorno do espectro autista</p>
+            <p>O guia definitivo para famílias, educadores e profissionais que buscam compreender melhor o autismo e promover inclusão</p>
+            <a href="https://pay.hotmart.com/P99825965Y" class="cta-button">QUERO ESTE LIVRO AGORA!</a>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="book-preview">
+                <div class="book-image">
+                    <img src="./1000693842.jpg" alt="Capa do livro Autismo">
+                </div>
+                <div class="book-description">
+                    <h2>Descubra um guia completo, acessível e atualizado sobre o Transtorno do Espectro Autista</h2>
+                    <p>Você está buscando informações confiáveis sobre autismo? Quer entender melhor como apoiar uma pessoa com TEA? Precisa de orientações práticas baseadas em evidências científicas?</p>
+                    <p>O livro <strong>"Autismo: Uma visão geral sobre o transtorno do espectro autista"</strong> foi criado para oferecer uma introdução clara e acessível sobre o TEA, reunindo conhecimentos essenciais para famílias, educadores, profissionais e qualquer pessoa interessada em compreender melhor esta condição.</p>
+                    <p>Com linguagem simples e direta, este guia aborda desde os conceitos básicos até estratégias práticas para o dia a dia, sempre com foco no respeito à neurodiversidade e na promoção da inclusão.</p>
+                    <a href="https://pay.hotmart.com/P99825965Y" class="cta-button">QUERO ESTE LIVRO AGORA!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2 class="section-title">O que você vai encontrar neste livro</h2>
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">1</div>
+                    <div>
+                        <h3>Informações atualizadas e confiáveis</h3>
+                        <p>Conteúdo baseado nas mais recentes pesquisas científicas e diretrizes clínicas sobre o Transtorno do Espectro Autista, apresentado de forma clara e acessível.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">2</div>
+                    <div>
+                        <h3>Visão completa e abrangente</h3>
+                        <p>Abordagem holística que contempla aspectos clínicos, educacionais, sociais e legais relacionados ao autismo, oferecendo uma compreensão integral do tema.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">3</div>
+                    <div>
+                        <h3>Orientações práticas para o dia a dia</h3>
+                        <p>Estratégias concretas para lidar com os desafios cotidianos, promover autonomia e melhorar a qualidade de vida das pessoas com TEA e suas famílias.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">4</div>
+                    <div>
+                        <h3>Perspectiva respeitosa e inclusiva</h3>
+                        <p>Conteúdo que valoriza a neurodiversidade e promove uma visão do autismo não como um problema a ser "consertado", mas como uma forma diferente e legítima de desenvolvimento.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">5</div>
+                    <div>
+                        <h3>Linguagem acessível e didática</h3>
+                        <p>Texto claro, direto e de fácil compreensão, ideal tanto para quem está tendo o primeiro contato com o tema quanto para quem já possui conhecimentos prévios.</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="https://pay.hotmart.com/P99825965Y" class="cta-button">ADQUIRA AGORA POR APENAS R$ 19,99</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2 class="section-title">Conteúdo completo em 8 capítulos essenciais</h2>
+            <div class="chapters">
+                <div class="chapter-card">
+                    <h3>Capítulo 1: Entendendo o Autismo</h3>
+                    <p>O que é o Transtorno do Espectro Autista, breve histórico e evolução do conceito, e desmistificação de ideias equivocadas sobre o autismo.</p>
+                </div>
+                <div class="chapter-card">
+                    <h3>Capítulo 2: Identificação e Diagnóstico</h3>
+                    <p>Principais características do TEA, como é feito o diagnóstico e sinais de alerta em diferentes idades, da primeira infância à vida adulta.</p>
+                </div>
+                <div class="chapter-card">
+                    <h3>Capítulo 3: Causas e Prevalência</h3>
+                    <p>O que a ciência atual sabe sobre as causas do autismo, dados sobre prevalência no Brasil e no mundo, e esclarecimento sobre mitos relacionados às causas.</p>
+                </div>
+                <div class="chapter-card">
+                    <h3>Capítulo 4: O Autismo no Dia a Dia</h3>
+                    <p>Como o autismo se manifesta na infância, adolescência e vida adulta, além das particularidades sensoriais e comportamentais.</p>
+                </div>
+                <div class="chapter-card">
+                    <h3>Capítulo 5: Abordagens de Apoio e Intervenção</h3>
+                    <p>Princípios da intervenção precoce, principais terapias e abordagens baseadas em evidências, e o papel fundamental da família e da escola.</p>
+                </div>
+                <div class="chapter-card">
+                    <h3>Capítulo 6: Direitos e Inclusão</h3>
+                    <p>Legislação brasileira sobre autismo, direito à educação inclusiva, e aspectos de acessibilidade e participação social.</p>
+                </div>
+                <div class="chapter-card">
+                    <h3>Capítulo 7: Convivência e Qualidade de Vida</h3>
+                    <p>Estratégias práticas para o dia a dia, construção de autonomia e independência, e apoio à família e autocuidado.</p>
+                </div>
+                <div class="chapter-card">
+                    <h3>Capítulo 8: Perspectivas e Considerações Finais</h3>
+                    <p>Avanços na compreensão do autismo, o protagonismo das pessoas autistas e caminhos para uma sociedade mais inclusiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que estão dizendo sobre o livro</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"Como mãe de uma criança autista, este livro foi um verdadeiro presente. Informações claras, práticas e que realmente me ajudaram a entender melhor meu filho. Recomendo para todas as famílias!"</p>
+                    <div class="testimonial-author">Ana C., mãe de criança com TEA</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Excelente material para profissionais da educação. Uso como referência nas formações que ministro para professores sobre inclusão. A linguagem acessível e o conteúdo atualizado fazem toda a diferença."</p>
+                    <div class="testimonial-author">Prof. Ricardo M., psicopedagogo</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Como pessoa autista, apreciei muito a abordagem respeitosa e a valorização da neurodiversidade presente no livro. É um material que realmente contribui para uma visão mais humana e menos estereotipada do autismo."</p>
+                    <div class="testimonial-author">Luiza S., adulta com TEA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <div class="faq-question">Este livro é adequado para quem não tem conhecimentos prévios sobre autismo?</div>
+                <div class="faq-answer">
+                    <p>Sim! O livro foi especialmente desenvolvido para ser acessível a qualquer pessoa interessada no tema, independentemente de conhecimentos prévios. A linguagem é clara e didática, explicando todos os conceitos de forma compreensível.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">O conteúdo é baseado em evidências científicas atualizadas?</div>
+                <div class="faq-answer">
+                    <p>Absolutamente. Todo o conteúdo do livro está fundamentado nas mais recentes pesquisas científicas e diretrizes clínicas sobre o Transtorno do Espectro Autista, incluindo referências ao DSM-5-TR e à CID-11.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Este livro substitui a orientação de profissionais especializados?</div>
+                <div class="faq-answer">
+                    <p>Não. Embora o livro ofereça informações valiosas e orientações práticas, ele não substitui o acompanhamento por profissionais especializados. O material serve como um complemento importante para ampliar conhecimentos e apoiar decisões mais informadas.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">O livro aborda questões específicas do contexto brasileiro?</div>
+                <div class="faq-answer">
+                    <p>Sim. O livro inclui informações sobre a legislação brasileira relacionada ao autismo, direitos garantidos por lei, acesso a serviços pelo SUS e planos de saúde, além de aspectos da inclusão escolar no contexto educacional brasileiro.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Em qual formato o livro está disponível?</div>
+                <div class="faq-answer">
+                    <p>O livro está disponível em formato PDF digital, pronto para leitura em qualquer dispositivo (computador, tablet ou smartphone). Após a compra, você receberá o acesso imediato para download.</p>
+                </div>
+            </div>
+            
+            <div class="guarantee">
+                <div class="guarantee-icon">✓</div>
+                <h3>Garantia de 7 dias</h3>
+                <p>Se você não ficar satisfeito com o conteúdo do livro, oferecemos garantia de reembolso total em até 7 dias após a compra. Sem perguntas, sem complicações.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pricing">
+        <div class="container">
+            <h2 class="section-title">Invista agora em conhecimento e inclusão</h2>
+            <div class="pricing">
+                <h3>Livro Digital "Autismo"</h3>
+                <p>Uma visão geral sobre o transtorno do espectro autista</p>
+                <div class="price">R$ 19,99</div>
+                <p class="price-note">Pagamento único - Acesso imediato</p>
+                <ul style="text-align: left; margin-bottom: 30px; list-style-type: none;">
+                    <li>✓ Livro completo em formato PDF</li>
+                    <li>✓ Acesso imediato após a compra</li>
+                    <li>✓ Leitura em qualquer dispositivo</li>
+                    <li>✓ Garantia de 7 dias</li>
+                </ul>
+                <a href="https://pay.hotmart.com/P99825965Y" class="cta-button">COMPRAR AGORA</a>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Não perca esta oportunidade!</h2>
+            <p style="max-width: 800px; margin: 0 auto 30px;">Adquira agora mesmo o livro "Autismo: Uma visão geral sobre o transtorno do espectro autista" e dê um passo importante para ampliar seus conhecimentos, promover inclusão e contribuir para uma sociedade mais acolhedora para pessoas neurodiversas.</p>
+            <a href="https://pay.hotmart.com/P99825965Y" class="cta-button">QUERO ESTE LIVRO AGORA!</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Todos os direitos reservados. Este produto é comercializado com o apoio da Hotmart. A plataforma não faz controle editorial prévio dos produtos comercializados, nem avalia a tecnicidade e experiência daqueles que os produzem. A existência da oferta do produto na plataforma não implica relação de endosso. Ao adquirir o produto, o comprador declara estar ciente dessas informações.</p>
+        </div>
+    </footer>
+</body>
+</html>
